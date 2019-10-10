@@ -1,0 +1,18 @@
+{{#if articles}}
+{{#each articles}}
+{{> articles/article-block}}
+{{/each}}
+{{else}}
+<div class="alert">
+    Oh No! it looks like we don't have any reddits!
+</div>
+<div class="article">
+    <div class="title">
+        <h5 class="noTitle">What would you like to do?</h5>
+    </div>
+    <div class="noContent">
+        <h3>Scrape some new Reddits</h3>
+        <h3><a href="/saved">Go To Saved Reddits</a></h3>
+    </div>
+</div>
+{{/if}}

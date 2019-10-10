@@ -1,28 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
-    <title>Mongo Scraper</title>
-    <script src="./assets/js/javascript.js"></script>
-</head>
-
-<body>
-    <div class="titleBar">
-        <h2>Mongo Scraper</h2>
-        <h3><a href="/">Home</a></h3>
-        <h3><a href="/saved">Saved Reddits</a></h3>
-        <h3><a id="scrape">Scrape more</a></h3>
-        <h3><a id="clearAll">clear Reddits</a></h3>
-    </div>
-    <div class="container">
-        <img height="500px" width="100%" src="https://devonhennig.com/wp-content/uploads/2018/02/reddit-banner.jpg"
-            alt="Banner image">
-        <div class="centered" id="chat-window">
-            <div class="centered">Mongo Scraper<br><a id="redditAddition">Reddit Addition</a></div>
-        </div>
-    </div>
     <div class="alert">
         Oh No! it looks like we don't have any reddits!
     </div>
@@ -39,16 +15,7 @@
     <div class="article">
         <div class="title">
             <h2 class="titleText"><a href="">random Title</a></h2>
-            <h3 class="saveButton" mongo-id="SWEET!!!" onclick="floop(this)">Save Post</h3>
-        </div>
-        <div class="content">
-            asdfasdfasdfasdfasdfasdfasdfasdfasdfasfsdfas
-        </div>
-    </div>
-    <div class="article">
-        <div class="title">
-            <h2 class="titleText">random Title</h2>
-            <h3 class="saveButton" mongo-id="SWEET!!!" onclick="floop(this)">Save Post</h3>
+            <h3 class="saveButton" mongo-id="SWEET!!!" onclick="Settings(this)">Settings</h3>
         </div>
         <div class="content">
             asdfasdfasdfasdfasdfasdfasdfasdfasdfasfsdfas
@@ -82,9 +49,28 @@
         </div>
     </div>
     <div class="spacer"></div>
-    <div class="footer">
-        Mongo Scraper
-    </div>
-</body>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
 
-</html>
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modalText">Some text in the Modal..</p>
+            <div id="repeater">
+                <div class="repeatableItem">
+                    <div class="repeatableText">
+                        asdfasdf fads sdf asdf asdf asdf asdf asd fasdf asdf asdf as
+                        <h4 mongo-id="" onclick="deleteNote(this)">Floof</h4>
+                    </div>
+                </div>
+            </div>
+            <textarea id="textArea" rows="4" cols="58"></textarea>
+            <div onclick="deletePost()" class="deleteReddit">
+                Delete Post
+            </div>
+            <div onclick="saveNote()" class="saveNote">
+                Save Note
+            </div>
+        </div>
+
+    </div>
