@@ -1,4 +1,4 @@
-function floop(test) {
-    console.log(test.getAttribute("mongo-id"));
-    test.parentElement.parentElement.remove();
+function saveReddit(item) {
+    let id = item.getAttribute("mongo-id");
+    item.parentElement.parentElement.remove();
 }
