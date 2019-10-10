@@ -1,0 +1,27 @@
+{
+  "name": "mongo-scraper",
+  "version": "0.0.1",
+  "description": "this is a mongo app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Coop25/Mongo-Scraper.git"
+  },
+  "author": "Cooper",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Coop25/Mongo-Scraper/issues"
+  },
+  "homepage": "https://github.com/Coop25/Mongo-Scraper#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "circular-json": "^0.5.9",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "mongoose": "^5.7.3"
+  }
+}
