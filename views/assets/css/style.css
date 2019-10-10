@@ -59,10 +59,11 @@ body {
 .container {
     position: relative;
     text-align: center;
-    color: white;
+    margin-bottom: 15px;
+    box-shadow: 10px 5px 20px 2px lightslategrey
 }
 
-#chat-window{
+#chat-window {
     margin: auto;
     width: 40%;
     height: 150px;
@@ -75,8 +76,69 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 50px;
+    color: white;
 }
 
-#redditAddition{
+#redditAddition {
     font-size: 30px
+}
+
+.article {
+    margin: auto;
+    width: 98%;
+    min-height: 100px;
+    box-shadow: 10px 5px 20px 2px lightslategrey;
+    margin-bottom: 15px;
+}
+
+.title {
+    margin: auto;
+    float: left;
+    width: 99%;
+    padding: 10px;
+    background: rebeccapurple
+}
+
+.titleText {
+    width: 90%;
+    float: left;
+    color: white;
+}
+
+.saveButton {
+    width: 8%;
+    float: right;
+    text-align: center;
+    color: black;
+    background: skyblue;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.saveButton:hover {
+    transform: translateY(2px)
+}
+
+.content {
+    clear: both;
+    font-size: 25px;
+    color: black;
+    padding: 10px;
+}
+
+.spacer {
+    height: 75px;
+    width: 100%;
+}
+
+.footer {
+    clear: both;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: rebeccapurple;
+    text-align: center;
+    color: white
 }
