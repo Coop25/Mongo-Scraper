@@ -197,3 +197,106 @@ body {
     text-align: center;
     color: white
 }
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    /* Could be more or less, depending on screen size */
+    text-align: center;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.repeatableItem {
+    width: 95%;
+    border: 1px solid;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+#repeater {
+    border: 1px solid;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 5px
+}
+
+.repeatableItem h4 {
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 30%;
+    border: 1px solid;
+    border-radius: 10px;
+    background: lightskyblue;
+}
+
+.repeatableItem h4:hover {
+    transform: translateY(2px);
+}
+
+.bottomButton {
+    display: inline-block;
+    width: 48%;
+    border: 1px solid;
+    border-radius: 10px;
+    font-size: 25px;
+    background: lightskyblue;
+}
+
+.bottomButton:hover {
+    transform: translateY(2px);
+}
+
+#textArea {
+    margin: auto;
+    margin-bottom: 4px;
+}
+
+#modalText {
+    font-size: 25px;
+    margin: 0;
+    margin-bottom: 4px;
+}

@@ -21,6 +21,11 @@ var RedditSchema = new Schema({
     type: String,
     required: true
   },
+  // `link` is required and of type String
+  saved: {
+    type: Boolean,
+    required: true
+  },
   // `notes` is an array of objects that stores a Note id
   // The ref property links the ObjectId to the Note model
   // This allows us to populate the Article with an associated Note

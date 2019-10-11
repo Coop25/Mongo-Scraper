@@ -1,76 +1,19 @@
-
-    <div class="alert">
-        Oh No! it looks like we don't have any reddits!
+{{#if articles}}
+{{#each articles}}
+{{#if saved}}
+{{> articles/saved-block}}
+{{/if}}
+{{/each}}
+{{else}}
+<div class="alert">
+    Oh No! it looks like we don't have any reddits!
+</div>
+<div class="article">
+    <div class="title">
+        <h5 class="noTitle">Would you like to browse available posts?</h5>
     </div>
-    <div class="article">
-        <div class="title">
-            <h5 class="noTitle">What would you like to do?</h5>
-        </div>
-        <div class="noContent">
-            <h3>Scrape some new Reddits</h3>
-            <h3><a href="/saved">Go To Saved Reddits</a></h3>
-        </div>
+    <div class="noContent">
+        <h3><a href="/">Browse Posts</a></h3>
     </div>
-
-    <div class="article">
-        <div class="title">
-            <h2 class="titleText"><a href="">random Title</a></h2>
-            <h3 class="saveButton" mongo-id="SWEET!!!" onclick="Settings(this)">Settings</h3>
-        </div>
-        <div class="content">
-            asdfasdfasdfasdfasdfasdfasdfasdfasdfasfsdfas
-        </div>
-    </div>
-    <div class="article">
-        <div class="title">
-            <h2 class="titleText">random Title</h2>
-            <h3 class="saveButton" mongo-id="SWEET!!!" onclick="floop(this)">Save Post</h3>
-        </div>
-        <div class="content">
-            asdfasdfasdfasdfasdfasdfasdfasdfasdfasfsdfas
-        </div>
-    </div>
-    <div class="article">
-        <div class="title">
-            <h2 class="titleText">random Title</h2>
-            <h3 class="saveButton" mongo-id="SWEET!!!" onclick="floop(this)">Save Post</h3>
-        </div>
-        <div class="content">
-            asdfasdfasdfasdfasdfasdfasdfasdfasdfasfsdfas
-        </div>
-    </div>
-    <div class="article">
-        <div class="title">
-            <h2 class="titleText">random Title</h2>
-            <h3 class="saveButton" mongo-id="SWEET!!!" onclick="floop(this)">Save Post</h3>
-        </div>
-        <div class="content">
-            asdfasdfasdfasdfasdfasdfasdfasdfasdfasfsdfas
-        </div>
-    </div>
-    <div class="spacer"></div>
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p id="modalText">Some text in the Modal..</p>
-            <div id="repeater">
-                <div class="repeatableItem">
-                    <div class="repeatableText">
-                        asdfasdf fads sdf asdf asdf asdf asdf asd fasdf asdf asdf as
-                        <h4 mongo-id="" onclick="deleteNote(this)">Floof</h4>
-                    </div>
-                </div>
-            </div>
-            <textarea id="textArea" rows="4" cols="58"></textarea>
-            <div onclick="deletePost()" class="deleteReddit">
-                Delete Post
-            </div>
-            <div onclick="saveNote()" class="saveNote">
-                Save Note
-            </div>
-        </div>
-
-    </div>
+</div>
+{{/if}}

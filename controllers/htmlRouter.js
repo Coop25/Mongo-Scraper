@@ -12,9 +12,10 @@ router.get("/", function (req, res) {
 });
 
 
-router.get("/", function (req, res) {
+router.get("/saved", function (req, res) {
   db.Reddit.find({}).then(response=>{
-    res.render("index",{articles: response || false})
+    let resArr = response.filter(r=> r.saved === true);
+    res.render("saved",{articles: resArr || false})
   })
 });
 

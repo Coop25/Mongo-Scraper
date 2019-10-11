@@ -2,5 +2,5 @@
 
 module.exports = {
   Reddit: require("./Reddit"),
-  Note: require("./Note")
+  Notes: require("./Note")
 };
